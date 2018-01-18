@@ -40,3 +40,10 @@ Chapter 5, "Obfuscation", requires a good understanding of assembly language and
  - `Inside Windows Debugging: A Practical Guide to Debugging and Tracing Strategies in Windows`, by Tarik Soulami (Microsoft Press, 2012)
  - `Advanced Windows Debugging`, by Mario Hewardt and Daniel Pravat (Addison-Wesley Professional, 2007)
  - `Surreptitious Software: Obfuscation, Watermarking, and Tamperproofi ng for Software Protection`, by Christian Collberg and Jasvir Nagra (Addison-Wesley Professional, 2009)
+
+
+## Not found books
+
+ - `Linkers and Loaders`, by John Levine (Morgan Kaufmann, 1999)
+ - `What Makes It Page? The Windows 7 (x64) Virtual Memory Manager`, by Enrico Martignetti (CreateSpace Independent Publishing Platform, 2012)
+ - `Surreptitious Software: Obfuscation, Watermarking, and Tamperproofi ng for Software Protection`, by Christian Collberg and Jasvir Nagra (Addison-Wesley Professional, 2009)
