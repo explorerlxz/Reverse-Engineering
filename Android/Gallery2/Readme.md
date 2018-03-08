@@ -20,13 +20,13 @@ stuff                                   ; DATA XREF: LOAD:000007F8↑o
 arg_0           =  0
 
 ; __unwind {
-                STMFD           SP!, {R11,LR}       ; 保存寄存器值及返回地址到堆栈，同时SP减8(存入堆栈两个值)
-                LDR             R12, [SP,#8+arg_0]  ; R12 = *[SP+8+arg_0]，也就是参数5?? arg_0到底什么意思？
-                ADD             LR, R3, R12         ; LR = R3+R12，也就是参数4所指向的内存地址再加上参数5(偏移地址)
+                STMFD           SP!, {R11,LR}       ; 保存寄存器及返回值到堆栈
+                LDR             R12, [SP,#8+arg_0]  ; 把参数5(int off)保存到R12中 
+                ADD             LR, R3, R12         ; LR也就是参数4指向的地址加上偏移地址(&img[off])
                 STRB            R2, [LR,#2]         ; R2(参数3)保存到[LR+2]所在的内存
                 STRB            R1, [LR,#1]         ; R1(参数2)保存到[LR+1]所在的内存
                 STRB            R0, [R3,R12]        ; R0(参数1)保存到[R3+R12]所在的内存
-                LDMFD           SP!, {R11,PC}       ; restore regs and return
+                LDMFD           SP!, {R11,PC}       ; 恢复寄存器，返回调用这个函数的代码继续运行
 ; End of function stuff
 ```
 
