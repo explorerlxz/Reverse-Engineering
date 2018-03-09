@@ -3,7 +3,7 @@
 
 Tools: VB Decompiler Pro 10.0
 
-##Patch Sub_Main file
+## Patch Sub_Main file
 
 
 ```
@@ -21,7 +21,7 @@ Patch address 0x5e6648-0x5e6661 to 0x00
 
 
 
-## Patch Frm_Explorer → Form_load
+## Patch Frm_Explorer → Form_load()
 
 ```
 loc_5D82F0: Call Proc_13_49_5F2890()
@@ -46,5 +46,6 @@ loc_5C184C: End If
 ```
 
 Patch 0x5C1847-0X5C184B//出错
+
 Patch 0x5C1840-0X5C184B//还是有问题，说明还有其它地方调用Proc_2_53_5D05FC(0)
 
